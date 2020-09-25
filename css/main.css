@@ -1,0 +1,1221 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #e3e3e3;
+}
+
+.hero {
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenido-hero {
+    padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.redes-sociales a:last-of-type {
+    margin-right: 0;
+}
+
+.informacion-evento {
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .informacion-evento {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.informacion-evento p {
+    display: inline-block;
+}
+
+.fecha {
+    margin-left: 30%;
+    float: left;
+    margin: 0;
+}
+
+.ciudad {
+    margin: 0;
+    float: right;
+}
+
+.informacion-evento p i {
+    color: rgb(255, 80, 0)
+}
+
+.nombre-sitio {
+    font-size: 8vw;
+    margin: 0;
+}
+
+.nombre-sitio span {
+    position: relative;
+    text-shadow: 0 0 30px black;
+}
+
+@media(min-width:678px) {
+    .char1 {
+        position: absolute;
+        top: 10px;
+    }
+    .char2 {
+        position: absolute;
+        top: 0px;
+    }
+    .char3 {
+        position: absolute;
+        top: 10px;
+    }
+    .char4 {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .char5 {
+        position: absolute;
+        top: 10px;
+    }
+    .char6 {
+        position: absolute;
+        top: 10px;
+    }
+    .char7 {
+        position: absolute;
+        top: 0px;
+    }
+    .char8 {
+        position: absolute;
+        top: 10px;
+    }
+    .char9 {
+        position: absolute;
+        top: 10px;
+    }
+    .char10 {
+        position: absolute;
+        top: 10px;
+    }
+}
+
+.slogan {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .contenedor {
+        width: 1050px;
+    }
+}
+
+.barra {
+    background-color: #353535;
+}
+
+div.logo {
+    width: 80%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    div.logo {
+        float: left;
+        width: 33%;
+    }
+}
+
+.navegacion-principal {
+    clear: both;
+    display: block;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
+.navegacion-principal a {
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all .4s ease;
+    padding: 1rem .5rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal a {
+        display: inline-block;
+    }
+    .navegacion-principal {
+        clear: none;
+    }
+}
+
+.navegacion-principal a:hover {
+    background-color: rgb(255, 50, 0);
+}
+
+.navegacion-principal a:nth-child(4n) {
+    border: 2px solid rgb(255, 50, 0);
+    color: rgb(255, 50, 0);
+}
+
+.navegacion-principal a:nth-child(4n):hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        display: block;
+        width: 66%;
+        float: right;
+        text-align: right;
+        align-items: center;
+    }
+}
+
+.menu-movil {
+    margin-top: 20px;
+    display: block;
+    width: 60px;
+    float: right;
+}
+
+.menu-movil:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-movil {
+        display: none;
+    }
+}
+
+.menu-movil span {
+    background-color: white;
+    height: 8px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.seccion {
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    background-image: url(../img/separador.png);
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.descripcion {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.imagen-evento img {
+    width: 100%;
+}
+
+.programa-evento {
+    position: relative;
+}
+
+.informacion-programa {
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+@media (min-width: 768px) {
+    .informacion-programa {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .informacion-programa {
+        width: 60%;
+        left: 5%;
+        top: 5%;
+    }
+}
+
+.ocultar {
+    display: none;
+}
+
+.informacion-programa .info-curso:nth-of-type(3) {
+    display: inline;
+}
+
+.menu-programa {
+    padding-bottom: 10px;
+    border-bottom: 1px solid orange;
+}
+
+@media (min-width: 768px) {
+    .menu-programa {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.menu-programa a {
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu-programa a i {
+    margin-right: 5px;
+}
+
+.menu-programa a {
+    position: relative;
+}
+
+.menu-programa a.flecha::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/talleres-flecha.jpg)
+}
+
+.detalle-evento {
+    border-bottom: 1px solid orange;
+}
+
+.detalle-evento p,
+.detalle-evento p i {
+    font-size: 1.3em;
+}
+
+.detalle-evento:last-of-type {
+    border-bottom: none;
+}
+
+.informacion-programa i {
+    color: rgb(255, 50, 0)
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.detalle-evento h3 {
+    color: rgb(255, 50, 0)
+}
+
+.button {
+    background-color: rgb(255, 50, 0);
+    padding: 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: background-color .3s ease;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.float-right {
+    float: right;
+}
+
+.invitado img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.invitado {
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    list-style: none;
+    margin-top: 10px;
+}
+
+@media (min-width: 1100px) {
+    .invitado {
+        width: 30%;
+    }
+}
+
+.invitado p {
+    background-color: rgba(0, 0, 0, .6);
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 50, 0);
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.invitado img {
+    transition: transform .3s ease;
+}
+
+.invitado p {
+    transition: all .3s ease;
+}
+
+.invitado img:hover {
+    filter: grayscale(0);
+    transform: scale(1.3);
+}
+
+.invitado:hover p {
+    bottom: -80px;
+}
+
+.invitado:nth-child(2n+1) {
+    float: left;
+}
+
+.invitado:nth-child(2n) {
+    float: right;
+}
+
+@media (min-width: 1100px) {
+    .invitado:nth-child(2n+1) {
+        float: none;
+    }
+    .invitado:nth-child(2n) {
+        float: none;
+    }
+    .invitado:nth-child(3n+1) {
+        clear: both;
+    }
+    .invitado {
+        float: right!important;
+        margin: 10px 10px 0 0;
+    }
+}
+
+.contador {
+    position: relative;
+    height: auto;
+}
+
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contador::before {
+    content: '';
+    background-image: url(../img/bg-resumen.jpg);
+}
+
+.resumen-evento {
+    padding: 100px 0;
+    position: relative;
+}
+
+.resumen-evento li p {
+    margin: 0;
+}
+
+.resumen-evento li {
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.resumen-evento li p {
+    margin: 0;
+    color: rgb(255, 50, 0);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+@media (min-width: 768px) {
+    .resumen-evento li {
+        width: 25%;
+    }
+}
+
+.tabla-precio {
+    padding: 30px 40px;
+}
+
+.numero {
+    text-align: center;
+    font-size: 30px;
+}
+
+.tabla-precio ul li::before {
+    font-family: "FontAwesome";
+    content: '\f14a';
+    color: green;
+    margin: 0px 10px;
+}
+
+.tabla-precio ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lista-precios>li {
+    width: 100%;
+    float: left;
+    background-color: white;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .lista-precios>li {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+.tabla-precio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tabla-precio {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.tabla-precio h3 {
+    margin: 0;
+}
+
+.lista-precios li:hover {
+    transform: scale(1.1);
+    border: 1px solid orange;
+}
+
+.button.hollow {
+    background-color: white;
+    color: rgb(255, 80, 0);
+    border: rgb(255, 80, 0) solid 1px;
+}
+
+section.mapa {
+    height: 480px;
+    background-color: rebeccapurple;
+}
+
+@media (min-width: 768px) {
+    .testimonial {
+        width: 30.3%;
+        margin-left: 2%;
+        float: left;
+    }
+    .testimonial {
+        background-color: white;
+    }
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial blockquote::after {
+    position: absolute;
+    content: '\201c';
+    font-family: "FontAwesome";
+    top: 5px;
+    color: rgb(255, 80, 0);
+    left: 10px;
+    font-size: 3rem;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-weight: 900;
+}
+
+.testimonial blockquote footer img {
+    border-radius: 100%;
+    width: 20%;
+    float: left;
+    margin-right: 5px;
+}
+
+.testimonial cite {
+    width: 80%;
+    color: rgb(255, 80, 0);
+}
+
+.testimonial span {
+    color: black;
+    display: block;
+}
+
+.contenido {
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.newsletter {
+    height: 300px;
+}
+
+.newsletter h3 {
+    font-size: 6vh;
+    margin: 0;
+    color: white;
+}
+
+.newsletter p {
+    margin: 0;
+    font-size: 2rem;
+    color: orange;
+}
+
+.news {
+    position: relative;
+}
+
+.transparente {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.newsletter::before {
+    content: '';
+    background-image: url(../img/bg-inscribir.jpg);
+}
+
+.contador-faltante {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'PT Sans';
+}
+
+.contador-faltante li {
+    text-align: center;
+    font-size: 2em;
+}
+
+.contador-faltante li p {
+    font-size: 3em!important;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(255, 30, 0);
+}
+
+@media (min-width: 768px) {
+    .contador-faltante li {
+        float: left;
+        width: 25%;
+    }
+}
+
+.site-footer {
+    margin-top: 30px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-family: 'PT Sans';
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .site-footer {
+        text-align: justify;
+    }
+}
+
+.site-footer h3 {
+    text-transform: uppercase;
+}
+
+.site-footer h3 span {
+    color: rgb(255, 80, 0);
+}
+
+@media (min-width: 768px) {
+    .site-footer .contenedor>div {
+        width: 30%;
+        margin-left: 3%;
+        float: left;
+    }
+}
+
+.ultimos-tweets ul {
+    list-style: none;
+    padding: 0;
+}
+
+.copia {
+    background-color: red;
+    position: relative;
+}
+
+.copia ul {
+    list-style: none;
+}
+
+.copia ul li {
+    width: 25%;
+    float: left;
+}
+
+.copia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .0);
+}
+
+form.registro h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
+form.registro label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: rgb(255, 50, 0) 2px solid;
+}
+
+div.caja {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+div.campo {
+    padding: 20px;
+}
+
+@media(min-width: 768px) {
+    div.campo {
+        float: left;
+        width: 33%;
+    }
+}
+
+div.paquetes .tabla-precio:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .contenido-dia>div {
+        float: left;
+        width: 33%;
+    }
+}
+
+.contenido-dia>div label {
+    display: block;
+}
+
+.contenido-dia>div label time {
+    color: rgb(255, 50, 0);
+}
+
+div.resumen p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+div.resumen div.extras {
+    float: left;
+    width: 50%;
+}
+
+div.extras div.orden {
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+}
+
+div.extras div.orden input {
+    margin: 0px 0 0 0;
+}
+
+div.resumen input {
+    display: block;
+    margin: 0 auto;
+}
+
+.total {
+    width: 50%;
+    float: left;
+}
+
+.suma_total {
+    background-color: #e1e1e1;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    display: none;
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(255, 50, 0);
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#viernes,
+#sabado,
+#domingo {
+    display: none;
+}
+
+.error {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    clear: both;
+}
+
+.navegacion-principal .activo {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 30, 0);
+}
+
+.arriba {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.evento-individual {
+    min-height: 220px;
+    padding: 10px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    border: 2px solid #919191;
+    text-align: center;
+    background-color: white;
+}
+
+.evento-individual:hover {
+    background-color: #e1e1e1;
+}
+
+.evento-individual:hover p {
+    transform: scaleY(1.2);
+    transform: scaleX(1.05);
+}
+
+@media (min-width: 768px) {
+    .evento-individual {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .evento-individual {
+        width: 33.3%;
+    }
+}
+
+.ayuda {
+    height: 100%;
+}
+
+.fecha-calendario {
+    background-color: rgb(255, 50, 0);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.fecha-calendario i {
+    color: white!important;
+}
+
+.dia i {
+    color: rgb(255, 50, 0);
+    margin-right: 5px;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.fecha-evento {
+    margin-top: 0;
+}
+
+.invitado-info {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.deshabilitado {
+    color: white!important;
+    background-color: gray!important;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(40, 40, 40);
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
